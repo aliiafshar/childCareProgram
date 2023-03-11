@@ -108,8 +108,6 @@ function scrolltoId6() {
   access.scrollIntoView({ behavior: "smooth" }, true);
 }
 
-
-
 // Sattar
 window.onscroll = function () {
   changeNavbar();

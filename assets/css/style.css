@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
 :root {
-	--main-color: rgb(26, 190, 255);
+	--main-color: rgb(36, 204, 230);
 	--nav-text-color: rgb(0, 0, 0);
-	--nav-active-color: rgb(0, 129, 155);
+	--nav-active-color: rgb(0, 113, 111);
 	--nav-active-bgcolor: rgb(255, 255, 255);
 	--background-shape: #005;
 	--primary-shape: #88D5BF;
@@ -21,6 +21,18 @@ body {
 	padding: 0;
 }
 
+
+
+.unlogo1 {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: #453787;
+}
+
+.unlogo2 {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: var(--secondary-shape);
+	margin-top: -15px;
+}
 
 .navbar {
 	position: fixed;
@@ -95,12 +107,17 @@ body {
 }
 
 .logo-image {
-	width: 46px;
-	height: 6px;
+	font-family: 'Mansalva', cursive;
+
 	margin-top: -10px;
+	max-width: 90px;
+	max-height: 40px;
 }
 
+.logo-image img {
 
+	width: 100%;
+}
 
 .hori-selector {
 	display: inline-block;
@@ -166,6 +183,7 @@ body {
 }
 
 .welcomePage .wp1 {
+	margin-top: -4vh;
 	width: 50%;
 	flex: 1;
 	display: flex;
@@ -176,6 +194,7 @@ body {
 
 .welcomePage .wp2 {
 	flex: 1;
+	margin-top: -4vh;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -192,8 +211,9 @@ body {
 }
 
 .wp-image {
+	margin-top: 200px;
 	width: auto;
-	max-width: 500px;
+	max-width: 1000px;
 	height: 500px;
 	min-height: 500px;
 	border-radius: 30px;
@@ -220,6 +240,7 @@ body {
 
 
 @media(min-width: 900px) {
+
 	.navbar-expand-custom {
 		-ms-flex-flow: row nowrap;
 		flex-flow: row nowrap;
@@ -245,6 +266,9 @@ body {
 }
 
 @media (max-width: 900px) {
+
+
+
 	#navbarSupportedContent ul li a {
 		padding: 12px 30px;
 	}
@@ -289,7 +313,13 @@ body {
 	/* Welcome page */
 
 	.welcomePage {
+
 		flex-direction: column-reverse;
+	}
+
+	.wp1 {
+		margin-top: -35vh !important;
+
 	}
 
 	.welcomePage .wp1 {
@@ -312,9 +342,9 @@ body {
 
 	.wp-image {
 		width: auto;
-		max-width: 50vw;
+		max-width: 130vw;
 		/* sattar */
-		height: 50vw;
+		height: 80vw;
 		/* sattar */
 		min-height: 60vw;
 		/* sattar */
@@ -357,10 +387,22 @@ body {
 
 	.wp-image-tab {
 		width: auto;
-		max-width: 500px;
+		max-width: 300px;
 		margin-bottom: -100px;
 		height: 500px;
 		min-height: 500px;
+	}
+
+	.wp-image-tab2 {
+		max-width: 200px;
+		margin-bottom: -20vh;
+		margin-top: 15vh;
+		height: 500px;
+		min-height: 500px;
+	}
+
+	#Schedule-Table {
+		margin-top: 20vh;
 	}
 
 
@@ -389,7 +431,7 @@ td {
 }
 
 .table-header-wp {
-	background-image: -webkit-linear-gradient(left, #d2a432, #55f420 10%, #ec3c68 20%, #f7acbc 30%, #ffd400 40%, #3b3b3b 50%, #f47920 60%, #e9426c 70%, #f7acbc 80%, #ffd400 90%, #7eb926);
+	background-image: -webkit-linear-gradient(left, #c600c0, #a01bff 10%, #ec3c68 20%, #ff2a58 30%, #007bff 40%, #3b3b3b 50%, #003097 60%, #e9426c 70%, #ff3661 80%, #00a6ff 90%, #ff00e6);
 	color: transparent;
 	-webkit-background-clip: text;
 	background-size: 200% 100%;
@@ -463,19 +505,19 @@ tr:hover {
 }
 
 tr:nth-child(1n) {
-	background: rgb(253, 222, 99);
+	background: rgb(207, 74, 171);
 }
 
 tr:nth-child(2n) {
-	background: rgb(255, 111, 135);
+	background: rgb(246, 147, 255);
 }
 
 tr:nth-child(3n) {
-	background: lightgreen;
+	background: rgb(111, 185, 255);
 }
 
 tr:nth-child(7n) {
-	background: rgb(108, 150, 255);
+	background: rgb(166, 85, 193);
 }
 
 tr:nth-child(5) {
@@ -693,8 +735,7 @@ article {
 #tab1:checked~#tab-content1,
 #tab2:checked~#tab-content2,
 #tab3:checked~#tab-content3,
-#tab4:checked~#tab-content4,
-#tab5:checked~#tab-content5 {
+#tab4:checked~#tab-content4 {
 	display: block;
 }
 
@@ -715,7 +756,9 @@ article {
 }
 
 
-
+.aboutMe div {
+	margin-top: 70px !important;
+}
 
 .wp-image-tab {
 	width: auto;
@@ -726,6 +769,15 @@ article {
 	justify-content: center;
 
 
+}
+
+.wp-image-tab2 {
+	width: auto;
+		max-width: 600px;
+		height: 300px;
+		min-height: 350px;
+		border-radius: 10px;
+		justify-content: center;
 }
 
 .wp1-tab {
@@ -747,7 +799,6 @@ article {
 	align-items: center;
 	justify-content: center;
 	padding-right: 5px;
-
 
 }
 
@@ -803,6 +854,7 @@ article {
 	border-radius: 30px;
 	overflow: hidden;
 }
+
 .gallery-image {
 	display: block;
 	width: 100%;
@@ -810,17 +862,15 @@ article {
 	object-fit: cover;
 	transition: transform 400ms ease-out;
 }
+
 .gallery-image:hover {
 	transform: scale(1.15);
 }
+
 @supports (display: grid) {
-
 	.gallery {
-
 		display: grid;
-
-		grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-
+		grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 		grid-gap: 2rem;
 
 	}
@@ -828,9 +878,7 @@ article {
 	.gallery,
 
 	.gallery-item {
-
 		margin: 0;
-
 	}
 
 }
