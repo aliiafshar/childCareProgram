@@ -1,5 +1,5 @@
-﻿<?php include('includes/partials/header.php'); ?>
-<body class="flex flex-col min-h-screen">
+<?php include('includes/partials/header.php'); ?>
+<body class="flex flex-col min-h-screen m-0 p-0">
 <?php include('includes/partials/navigationbar.php'); ?>
 
 <section class="relative overflow-hidden bg-gradient-to-br from-brand-500 via-brand-500 to-brand-600">

@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $tabs = [
     [
         'id'      => 'tab1',
@@ -26,7 +26,7 @@ $tabs = [
     ]
 ];
 ?>
-<section id="activity" class="py-12 sm:py-14 lg:py-16 bg-white">
+<section id="activity" class="py-12 sm:py-14 lg:py-16 bg-white scroll-mt-28">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center max-w-2xl mx-auto mb-10">
       <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 text-brand-700 text-sm ring-1 ring-brand-500/20 mb-4">

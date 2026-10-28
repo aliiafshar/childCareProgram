@@ -1,4 +1,4 @@
-﻿<?php include('includes/partials/header.php'); ?>
+<?php include('includes/partials/header.php'); ?>
 <body class="flex flex-col min-h-screen">
 <?php include('includes/partials/navigationbar.php'); ?>
 
